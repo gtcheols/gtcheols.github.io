@@ -8,7 +8,7 @@
 # site root — your file replaces this one wholesale, it does not merge into it.
 lines:
   - pre: "Music.\n"
-    accent: "no music is no life."
+    accent: "no music, no life."
   - pre: "Travel.\n"
     accent: "life is travling."
   - pre: "Dev.\n"

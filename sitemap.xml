@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gtcheols.github.io/</loc>
-    <lastmod>2026-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gtcheols.github.io/posts/</loc>
+    <lastmod>2026-10-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gtcheols.github.io/posts/first_post/</loc>
+    <lastmod>2026-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://gtcheols.github.io/travel/tinygo_conf_2026/</loc>
     <lastmod>2026-10-10T00:00:00+00:00</lastmod>
@@ -22,7 +28,5 @@
     <loc>https://gtcheols.github.io/series/</loc>
   </url><url>
     <loc>https://gtcheols.github.io/tags/</loc>
-  </url><url>
-    <loc>https://gtcheols.github.io/posts/</loc>
   </url>
 </urlset>

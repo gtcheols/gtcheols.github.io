@@ -10,6 +10,15 @@
 		
 		
 		
+			<lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="https://gtcheols.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>첫 번째 포스트</title>
+				<link>https://gtcheols.github.io/posts/first_post/</link>
+				<pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/posts/first_post/</guid>
+				<description>&lt;p&gt;언제 부터인가 기록을 더 이상 남기지 않고 있었습니다.&lt;/p&gt;&#xA;&lt;p&gt;지난 몇 달 동안 제법 텅 빈 시간을 보낸다고 했는데, 지나고 보니 제법 많은 계획과, 생각들, 사진들이 남아 있네요.&#xA;흘러간 시간을 정리해야 할 것 같기도 하고 그냥 뭔가 기록을 남기고 싶어서 블로그를 생각 했다가, 이 것도 조금 새롭게 접근해보자는 생각이 들어서 hugo 를 통해 컨텐츠를 만들고 github pages 를 통해 호스팅 해보고 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;우선은 지난 몇 달 동안의 기록 만이라도 정리해보려 합니다.&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>

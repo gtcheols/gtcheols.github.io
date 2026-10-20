@@ -60,15 +60,15 @@ buildExpired = false
   defaultTheme = "auto"   # dark | light | auto (auto follows the OS)
 
   # --- identity ------------------------------------------------------------
-  brand = "nuno"
+  brand = "gtcheols.github.io"
   # No `favicon` here on purpose: with it unset the theme probes assets/ for
   # favicon.{ico,svg,png} and finds assets/favicon.png. Set params.favicon only
   # for a file in static/ — it is resolved with relURL, not through the asset
   # pipeline. If neither exists the theme emits no icon link at all, which beats
   # a hardcoded /favicon.ico 404 on every page.
   ogImage = "images/example-figure.png"
-  description = "A minimalist, dark-first Hugo theme. Nunito only, four palettes, no third-party requests."
-  tagline = "personal blog of GTCheols."
+  description = "Software developer, guitarist, traveler."
+  tagline = "this is personal blog of GTCheols."
   copyright = "© 2026 · GTCheols"
 
   # params.portrait is deliberately unset so the About page shows the empty
@@ -100,8 +100,8 @@ buildExpired = false
   homeHeader = "masthead"
   homeStyle = "grid"
   homeGroupByYear = false
-  masthead = 'Minimal<span class="accent">,</span><br>dark<br>by default.'
-  mainSections = ["posts"]
+  masthead = '<span class="accent">GT</span>cheols.'
+  mainSections = ["posts", "dev", "travel", "music"]
   DateFormat = "2 January 2006"
 
   # --- sections ------------------------------------------------------------

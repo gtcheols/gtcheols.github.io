@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Blog of GTCheols</title>
-		<link>https://example.org/</link>
+		<link>https://gtcheols.github.io/</link>
 		<description>Recent content on Blog of GTCheols</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,6 +10,22 @@
 		
 		
 		
-			<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+			<lastBuildDate>Sat, 10 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://gtcheols.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>TinyGo Conference 2026 in JAPAN</title>
+				<link>https://gtcheols.github.io/posts/tinygo_conf_2026/</link>
+				<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/posts/tinygo_conf_2026/</guid>
+				<description>&lt;p&gt;홈페이지 : &lt;a href=&#34;https://conf.tinygo-keeb.org/2026/&#34;&gt;TinyGo Conference / 2026&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About</title>
+				<link>https://gtcheols.github.io/about/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/about/</guid>
+				<description>&lt;p&gt;This is the About layout. It puts your prose and a couple of summary rows in the&#xA;left column, and a portrait with a row of social icons on the right.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;params.portrait&lt;/code&gt; is deliberately unset on this demo site, so what you see to the&#xA;right is the empty frame. Point it at any image under &lt;code&gt;assets/&lt;/code&gt; or &lt;code&gt;static/&lt;/code&gt; and&#xA;the theme resizes it to 800px wide, converts it to WebP, and emits real dimensions&#xA;so the page never shifts as it loads.&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>

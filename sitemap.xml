@@ -2,10 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/</loc>
+    <loc>https://gtcheols.github.io/</loc>
+    <lastmod>2026-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://gtcheols.github.io/posts/tinygo_conf_2026/</loc>
+    <lastmod>2026-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://gtcheols.github.io/posts/</loc>
+    <lastmod>2026-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gtcheols.github.io/about/</loc>
+  </url><url>
+    <loc>https://gtcheols.github.io/categories/</loc>
+  </url><url>
+    <loc>https://gtcheols.github.io/dev/</loc>
+  </url><url>
+    <loc>https://gtcheols.github.io/music/</loc>
+  </url><url>
+    <loc>https://gtcheols.github.io/series/</loc>
+  </url><url>
+    <loc>https://gtcheols.github.io/tags/</loc>
+  </url><url>
+    <loc>https://gtcheols.github.io/travel/</loc>
   </url>
 </urlset>

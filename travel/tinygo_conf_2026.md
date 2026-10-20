@@ -15,5 +15,6 @@ date: 2026-10-10
 
 좀 아쉬운건, 뒷풀이를 안 가서... 아직도 이 분들과 그다지 친해지지 못했다는..ㅋㅋ
 
-홈페이지 : [TinyGo Conference / 2026](https://conf.tinygo-keeb.org/2026/)
+- 홈페이지 : [TinyGo Conference / 2026](https://conf.tinygo-keeb.org/2026/)
+- TinyGo Keeblog : [TinyGo Conference 2026 in JAPAN を開催しました](https://tinygo-keeb.org/blog/?p=348)
 

@@ -10,15 +10,6 @@
 		
 		
 		
-			<lastBuildDate>Sat, 10 Oct 2026 00:00:00 +0000</lastBuildDate>
-		
 			<atom:link href="https://gtcheols.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>TinyGo Conference 2026 in JAPAN</title>
-				<link>https://gtcheols.github.io/posts/tinygo_conf_2026/</link>
-				<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
-				<guid>https://gtcheols.github.io/posts/tinygo_conf_2026/</guid>
-				<description>&lt;p&gt;홈페이지 : &lt;a href=&#34;https://conf.tinygo-keeb.org/2026/&#34;&gt;TinyGo Conference / 2026&lt;/a&gt;&lt;/p&gt;</description>
-			</item>
 	</channel>
 </rss>

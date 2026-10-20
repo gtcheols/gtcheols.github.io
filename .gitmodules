@@ -6,3 +6,6 @@
 	path = content
 	url = https://github.com/gtcheols/gtcheols.github.io
 	branch = content
+[submodule "themes/nuno"]
+	path = themes/nuno
+	url = https://github.com/that-daniel/nuno.git

@@ -2,3 +2,7 @@
 	path = public
 	url = https://github.com/gtcheols/gtcheols.github.io
 	branch = source
+[submodule "content"]
+	path = content
+	url = https://github.com/gtcheols/gtcheols.github.io
+	branch = content

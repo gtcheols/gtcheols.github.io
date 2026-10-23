@@ -1,6 +1,6 @@
 ---
 title: "Music"
-kicker: "no music is no life"
+kicker: "no music, no life"
 ---
 
 

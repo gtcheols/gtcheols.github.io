@@ -2,6 +2,8 @@
 title: "TinyGo Conference 2026 in JAPAN"
 description: "TinyGo 라는 주제로 열린 컨퍼런스에 다녀왔습니다"
 date: 2026-10-10
+tags: ["tinygo_conf", "dev", "tinygo_keeb", "conference"]
+categories: ["travel", "dev"]
 ---
 
 ## 개요
@@ -49,7 +51,7 @@ date: 2026-10-10
 
 ### Embedded Development in the Multi-Core Era: When Mutex Breaks Down
 
-rdon-key
+*rdon-key*
 
 > 임베디드 멀티코어 환경에서는 뮤텍스(Mutex)를 설정하거나 인터럽트를 금지하더라도 경합(race condition) 문제가 여전히 발생할 수 있습니다. 이는 해당 조치들이 코어의 동작을 제어할 뿐, 코어 외부의 요소까지 제어하는 ​​것은 아니기 때문입니다. 본 세션에서는 TinyGo의 RP2 USB 드라이버에서 실제로 발생했던 경합 사례(PR#5472)를 바탕으로, 처리 순서가 뒤바뀌는 것만으로도 완료 이벤트가 유실되는 메커니즘을 설명합니다. 또한 뮤텍스의 한계를 파악하고, 펌웨어 개발 시 어떤 부분을 중점적으로 점검해야 할지 공유하고자 합니다.
 
@@ -61,7 +63,7 @@ rdon-key
 
 ### Building a Clock with TinyGo Led Me Down the Rabbit Hole from DNS to TLS
 
-hnw
+*hnw*
 
 > 저는 TinyGo로 간단한 시계를 구현해 보았습니다. M5Stack을 사용하여 NTP로 시간을 가져오고, HTTPS API를 통해 타임존 정보를 얻으면 완성될 예정이었습니다.
 >
@@ -70,7 +72,7 @@ hnw
 > 이 세션에서는 일련의 시행착오를 통해, TinyGo로 인터넷 통신을 할 때 Wi-Fi, IP, DNS, TCP, HTTP, TLS 각 계층을 누가 담당하는지 정리해 봅니다. 또한, 힙(heap) 사용을 지양하고 고정 길이 버퍼와 메모리 재사용을 철저히 하는 lneto의 설계가 일반적인 Go 프로그래밍과 어떻게 다른지도 소개합니다.
 >
 > Go 표준 라이브러리를 이용한 HTTPS는 실제로 TLS 1.2/1.3 환경에서 정상적으로 작동했습니다. 하지만 TLS 핸드셰이크 과정에서 힙 사용량이 약 300KB에 달해, RAM이 520KB인 Pico 2 W에서도 거의 한계치에 가까웠습니다. 이러한 결과를 바탕으로 임베디드용 TLS 구현이 왜 필요한지, 그리고 TinyGo에서 HTTPS를 실용적으로 사용하기 위해 무엇이 부족한지 고찰해 봅니다.
-
+>
 > PC 환경의 Go에서는 당연하게 사용할 수 있는 네트워크 기능을 TinyGo 환경에서 어떻게 구현하고, 미완성된 부분을 어떻게 만들어 나갈 것인가. 그 과정의 흥미로움을 여러분과 공유하고자 합니다.
 
 [Github](https://github.com/soypat/lneto)
@@ -79,17 +81,16 @@ hnw
 
 **슬라이드 내 요약**
 
-    - TinyGo의 네트워크 관련 부분은 일반적인 Go와 완전히 달라서 흥미롭습니다.
-    - TinyGo 라이브러리를 개발할 때는 메모리 절약을 고려해야 해서 재미있습니다.
-    - TinyGo에서 TLS를 구현하려면 해야 할 일이 아주 많습니다.
-
-        **TinyGo는 통신 구현도 재미있으니, 여러분도 함께 커밋(commit)해 봅시다!**
+- TinyGo의 네트워크 관련 부분은 일반적인 Go와 완전히 달라서 흥미롭습니다.
+- TinyGo 라이브러리를 개발할 때는 메모리 절약을 고려해야 해서 재미있습니다.
+- TinyGo에서 TLS를 구현하려면 해야 할 일이 아주 많습니다.
+- **TinyGo는 통신 구현도 재미있으니, 여러분도 함께 커밋(commit)해 봅시다!**
 
 
 
 ### Understanding HID through TinyGo
 
-Rinrin
+*Rinrin*
 
 > 서론
 >
@@ -118,7 +119,7 @@ Rinrin
 
 ### Connecting TinyGo and Go with RPC
 
-Nobonobo
+*Nobonobo*
 
 > 마이크로컨트롤러 계층과 PC 계층을 연결하는 원격 프로시저 호출(RPC) 프레임워크 소개
 
@@ -129,7 +130,7 @@ Nobonobo
 
 ### Big / Tiny GOTOOLCHAIN
 
-sivchari
+*sivchari*
 
 > 저는 Go와 TinyGo 모두 릴리스 버전이 아닌 소스 코드에서 직접 빌드하여 최신 상태로 사용하고 있습니다. Go의 devel 버전과 TinyGo의 HEAD를 동시에 따라가는 이 생활을 하다 보면, 릴리스 버전만 사용해서는 겪을 수 없는 문제들에 누구보다 먼저 직면하게 됩니다. TinyGo가 Go의 devel 버전을 파싱하지 못하거나, 호환성 매트릭스(compatibility matrix)에서 최신 Go 버전이 배제되거나, 에디터의 gopls 설정이 이를 따라가지 못하는 등의 문제들입니다. 전반부에서는 이러한 문제들을 업스트림 패치(tinygo#4601, tinygo#5078, tinygo.vim#9)를 통해 어떻게 해결해 왔는지 소개합니다. 또한 매트릭스 검사를 우회하는 플래그를 직접 구현한 후, Go 1.26의 표준 라이브러리(stdlib) 삭제(internal/itoa)로 인해 TinyGo가 작동하지 않게 되었던 경험을 바탕으로, '매트릭스가 무엇을 보호하고 있었는지'와 Go가 어디까지 호환성을 보장하는지에 대해 이야기합니다. 후반부에서는 반대로 특정 버전의 TinyGo를 간편하게 사용하고 싶은 상황에 대해 다룹니다. 항상 최신 버전을 사용하더라도, 이슈를 재현하기 위해 임의의 버전을 빠르게 설치하고 전환해야 할 때가 있기 때문입니다. 하지만 매번 릴리스된 바이너리를 다운로드하는 것도 번거로운 일이며, 해당 버전의 브랜치에서 소스 코드를 빌드하는 것은 생각만 해도 부담스러운 작업입니다. 이에 제안한 툴체인 관리(tinygo#5202) 방식을 중심으로, 'TinyGo를 GOTOOLCHAIN으로 활용할 수 없을까?'라는 검증 과정에서 확인한 Go 툴체인 전환의 내부 구현과 현재의 제약 사항, 그리고 [golang.org/dl](golang.org/dl) 패턴으로 구현한 프로토타입인 sivchari/tinygo-dl의 시연을 소개합니다. '항상 최신 버전을 사용하고 싶다'는 것과 '임의의 버전을 간편하게 사용하고 싶다'는 것은 모두 TinyGo의 툴체인 관리라는 주제로 연결됩니다. Go와 TinyGo 모두 소스 코드에서 빌드하는 입장에서, Go와 TinyGo의 경계에서 어떤 일이 벌어지고 있는지 살펴보고, 당장 내일부터 활용할 수 있는 버전 관리 선택지를 공유하고자 합니다.
 
@@ -141,12 +142,12 @@ go 와 tinyGo 를 모두 소스코드를 내려받아서 빌드하여 사용하�
 
 참고로 이 repo 를 찾아보니 다음과 같은 내용 이네요..ㅋ
 
-**[sivchari/tinygo-dl](https://github.com/sivchari/tinygo-dl/blob/main/tinygo0.42.0/main.go)**은 Go 언어(Golang)의 도구인 `golang.org/dl`과 유사하게, **원하는 특정 버전의 TinyGo를 독립적으로 다운로드하고 관리할 수 있도록 도와주는 오픈소스 유틸리티**입니다
+[**sivchari/tinygo-dl**](https://github.com/sivchari/tinygo-dl/blob/main/tinygo0.42.0/main.go)은 Go 언어(Golang)의 도구인 `golang.org/dl`과 유사하게, **원하는 특정 버전의 TinyGo를 독립적으로 다운로드하고 관리할 수 있도록 도와주는 오픈소스 유틸리티**입니다
 
 
 ### Observability with TinyGo? Can We Use OpenTelemetry with TinyGo?
 
-Yoshiki Yamaguchi
+*Yoshiki Yamaguchi*
 
 > TinyGo로 구동되는 ESP32-S3 기기에서 OpenTelemetry Collector로 텔레메트리 데이터를 전송하는 실험에 대해 이야기합니다.
 
@@ -175,7 +176,7 @@ PoC 결과 : [https://github.com/ymotongpoo/tinygo-otel-esp32](https://github.co
 
 ### [LT] Turning the zero-kb02 from the Workshop into a Physical UI for Codex
 
-ibuki
+*ibuki*
 
 > TinyGo Keeb Tour에서 zero-kb02를 조립했지만 제대로 활용하지 못하고 계신 분들을 위해, 초보자의 시선에서 저만의 활용법을 소개해 드립니다. 워크숍에서는 샘플을 구동하는 단계까지 진행했지만, 그 이후에 무엇을 만들어야 할지 막막했었습니다. 그러던 중 Codex Micro를 접하게 되었고, TinyGo와 zero-kb02를 활용해서 Codex용 물리 UI와 유사한 것을 만들 수 있지 않을까 하는 아이디어를 떠올렸습니다. 이번 발표에서는 LED, OLED, 키 입력, USB 통신을 조합하여 워크숍에서 사용한 기판을 저만의 도구로 발전시켜 나간 과정을 소개합니다. 구현 과정에서 겪었던 어려움, 라이브러리 활용법, 실기기에서의 테스트 방법 등을 공유할 예정입니다. 워크숍 이후 무엇을 만들지 고민하시는 분들께, 자신만의 오리지널 키보드 제작을 시작하는 계기가 되기를 바랍니다.
 
@@ -189,7 +190,7 @@ zero-kb02 를 어디에 사용할까 하다가,  codex micro 라는 제품에 �
 
 ### [LT] zero-micro: Built it Because Codex Micro Looked Just Like zero-kb02
 
-makki
+*makki*
 
 > OpenAI의 AI 에이전트 컨트롤러인 'Codex Micro'는 LED로 빛나는 십여 개의 키와 다이얼, 조이스틱을 갖추고 있습니다. 'TinyGo Keeb Tour'에서 제작하는 'zero-kb02'와 아주 흡사하죠. 그래서 'zero-kb02'를 AI 에이전트 컨트롤러로 활용할 수 있는 'zero-micro'를 만들어 보았습니다. [https://github.com/makiuchi-d/zero-micro](https://github.com/makiuchi-d/zero-micro)
 
@@ -204,6 +205,8 @@ makki
 
 
 ### [LT] Something Small, Cute, and Go
+
+*Yasutaka Kato*
 
 > 직접 제작한 가정용 IoT 기기는 일단 운용을 시작하면 유지보수나 리팩토링을 뒤로 미루기 쉽지 않나요? 그러다 보면 어느새 라이브러리 노후화, 언어 버전의 EOL(지원 종료), 하드코딩 누적과 같은 기술 부채가 쌓이게 됩니다. 저는 10년 전 Python으로 구현해 매년 여름마다 가동 중인 가정용 수조 쿨러를 소재로, TinyGo와 Claude Code를 조합해 리팩토링을 수행한 사례를 소개하고자 합니다. ① 방치된 IoT 기기의 기술 부채: 10년 전 Python으로 구현한 수조 쿨러가 유지보수 없이 매년 계속 가동되고 있는 사례를 소개합니다. 어떤 라이브러리를 설치했는지조차 잊어버렸고, Python 자체도 EOL을 맞이했으며, 코드 곳곳에는 하드코딩이 남아 있었습니다. ② TinyGo가 열어준 리팩토링의 길: 싱글 바이너리의 간편함에 매료된 이후 7~8년 동안 Go 언어를 사용해 왔으며, 개인 OSS도 대부분 Go로 구현했습니다. 이전에는 IoT 분야에서 선택지가 아니었던 Go가 TinyGo의 등장으로 현실적인 선택지가 되었습니다. 지금이야말로 리팩토링을 시작할 때입니다! ③ Claude Code를 활용한 리팩토링과 그 이후: 기존 Python 구현을 바탕으로 Claude Code를 활용해 리팩토링을 진행했습니다. 이미 검증된 기존 코드가 있었기에 구현이 무너지지 않고 깔끔한 코드로 완성할 수 있었습니다. 수많은 의존 라이브러리는 작고 귀여운 하나의 싱글 바이너리로 다시 태어났으며, 경량화를 통해 확보된 여유 공간은 새로운 기능을 추가할 수 있는 발판이 되었습니다. 집에 잠들어 있는 오래된 IoT 기기의 리팩토링, 꼭 TinyGo로 시도해 보세요.
 
@@ -231,6 +234,8 @@ makki
 
 ### [LT] GBA Development with TinyGo in 5 Minutes
 
+*ixxxy*
+
 > TinyGo는 GBA를 지원하며, 이를 통해 직접 만든 ROM을 빌드할 수 있습니다. 또한 'tinygba'라는 전용 라이브러리도 제공되어 GBA의 일부 기능을 손쉽게 활용할 수 있습니다. 이번 세션에서는 간단한 예제를 실행해 보며, GBA에서 TinyGo를 구동하는 방법을 소개합니다.
 
 사실 GBA 가 뭐지? 했는데, GameBoy Advance 네요.ㅋ
@@ -257,4 +262,5 @@ tinyGo 로 GBA 용 어플리케이션을 개발하는 프로젝트가 있더군�
 대형 컨퍼런스들은 대부분 큰 기업의 신제품 발표나, 소개 영업 성격의 내용이 많다면, 이런 행사들은 개발자들의 요즘 고민거리들 부터 현장에서의 어떤 키워드가 자주 언급되는지 같은 이야기들을 살짝 살짝 느낄 수 있어서 좋은데요. 이번 tinyGo 컨퍼런스는 이 중에서도 소규모 여서 그런지 , 또 다릅니다. gopher 스럽다고 해야 할지, 뭔가 한마디로 요약하기는 좀 어렵지만, 신선하고 흥미롭긴 합니다.ㅋ 
 
 무엇보다 이 tinygo-keeb 모임의 분위기가 왠지 좋아 보여서 이후에도 또 만나보고 싶다는 생각을 하게 되네요, 
+
 

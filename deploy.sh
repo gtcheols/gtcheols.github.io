@@ -2,18 +2,26 @@
  
 echo -e "\033[0;32mDeploying updates to GitHub***\033[0m"
  
+# 1) content: 브랜치 위에 있고, 커밋·푸시까지 끝났는지 검사만 한다
+if [ "$(git -C content branch --show-current)" != "content" ]; then
+  echo "content가 content 브랜치 위에 있지 않습니다(분리된 HEAD?). 중단합니다." >&2; exit 1
+fi
+if [ -n "$(git -C content status --porcelain)" ]; then
+  echo "content에 커밋하지 않은 변경이 있습니다. 중단합니다." >&2; exit 1
+fi
+git -C content fetch origin
+if [ "$(git -C content rev-parse HEAD)" != "$(git -C content rev-parse origin/content)" ]; then
+  echo "content가 origin/content와 다릅니다(푸시 누락?). 중단합니다." >&2; exit 1
+fi
 
-# public, content만 최신화한다. 테마는 태그로 고정해 두었으므로 제외
-git submodule update --remote -- public content
-
-# public을 분리된 HEAD가 아니라 source 브랜치 위에 올려둔다
+# 2) public: 항상 origin/source 위의 브랜치로 맞춘다
+git -C public fetch origin
 git -C public checkout -B source origin/source
 
- 
-# `hugo -t <테마명>` 명령어로 Hugo 정적 페이지 렌더링
-# `--gc` 옵션은 `garbage collection` 을 의미하며 불필요한 페이지를 삭제
+# 3) 빌드
 hugo -t nuno --gc
- 
+
+
 # `source` 브랜치로 이동
 cd public
 git add .

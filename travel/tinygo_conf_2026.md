@@ -163,11 +163,11 @@ OpenTelemetry 라는게, 특정 벤더나 장치, 기술등에 얽매이지 않�
 
 **슬라이드의 결론**
 
-    - OTel Go SDK를 사용할 수 없는 원인은 메모리 제한이 아니라, 호스트 OS에 대한 의존성과 `reflect` 기능이 구현되어 있지 않기 때문입니다.
-    - OTLP 스키마는 사용할 수 있습니다. `encoding/json`, 직접 구현한 HTTP 클라이언트, 그리고 SNTP를 통해 통신이 가능합니다.
-    - 마이크로컨트롤러 환경에서 문제가 되는 것은 메모리 용량 자체보다는, 전송할 때마다 발생하는 메모리 할당과 고루틴(goroutine) 스택 문제입니다.
-    - 디바이스는 해당 환경에서만 알 수 있는 정보만 전송하고, TLS 처리나 속성(attribute) 추가는 Collector에 맡깁니다.
-    - Collector 이후 단계는 서버에서 사용하는 OpenTelemetry와 동일한 파이프라인을 거칩니다. 
+- OTel Go SDK를 사용할 수 없는 원인은 메모리 제한이 아니라, 호스트 OS에 대한 의존성과 `reflect` 기능이 구현되어 있지 않기 때문입니다.
+- OTLP 스키마는 사용할 수 있습니다. `encoding/json`, 직접 구현한 HTTP 클라이언트, 그리고 SNTP를 통해 통신이 가능합니다.
+- 마이크로컨트롤러 환경에서 문제가 되는 것은 메모리 용량 자체보다는, 전송할 때마다 발생하는 메모리 할당과 고루틴(goroutine) 스택 문제입니다.
+- 디바이스는 해당 환경에서만 알 수 있는 정보만 전송하고, TLS 처리나 속성(attribute) 추가는 Collector에 맡깁니다.
+- Collector 이후 단계는 서버에서 사용하는 OpenTelemetry와 동일한 파이프라인을 거칩니다. 
 
 PoC 결과 : [https://github.com/ymotongpoo/tinygo-otel-esp32](https://github.com/ymotongpoo/tinygo-otel-esp32)
 

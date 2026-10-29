@@ -56,7 +56,8 @@ d.setAttribute('data-theme',t);d.setAttribute('data-ground',g);d.style.colorSche
   <div class="post__headline">
     <h1 class="post__title">첫 번째 포스트</h1>
   </div><div class="post__meta">
-    <span>20 October 2026</span><span>1 min read</span><span class="post__meta-author">by gtcheols</span>
+    <span>20 October 2026</span>
+    <span id="gc-views"></span><span>1 min read</span><span class="post__meta-author">by gtcheols</span>
   </div>
 </header>
 
@@ -123,6 +124,23 @@ d.setAttribute('data-theme',t);d.setAttribute('data-ground',g);d.style.colorSche
 <script type="speculationrules">
 {"prefetch":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}
 </script><script>window.NUNO={index:"/index.json",search:"/js/search.772ab65730321cc18c9ce939e2634e24a870eb43cdcf430dc744509e21b53e66.js",i18n:{"copied":"Copied","copy":"Copy","resultMany":"{n} posts","resultOne":"{n} post","toBrown":"Switch to brown","toDark":"Switch to dark mode","toGreen":"Switch to green","toLight":"Switch to light mode"}};</script><script defer src="/js/app.5715b3e7fd7e61b06d3e349ecae9c863a47e9f8eed0975638c383f36ad6c925b.js" integrity="sha256-VxWz5/1&#43;YbBtPjSeyunIY6R&#43;n47tCXVjjDg/Nq1skls="></script>
+
+
+<script data-goatcounter="https://gtcheols.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+<script>
+(function () {
+  var el = document.getElementById('gc-views');
+  if (!el) return;
+  var path = location.pathname.replace(/(.+)\/$/, '$1');
+  fetch('https://gtcheols.goatcounter.com/counter/' + encodeURIComponent(path) + '.json')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { if (d) el.textContent = d.count + '회 조회'; })
+    .catch(function () {});
+})();
+</script>
 
 </body>
 </html>

@@ -21,17 +21,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Dev</title>
-				<link>https://gtcheols.github.io/categories/dev/</link>
+				<title>여행</title>
+				<link>https://gtcheols.github.io/categories/%EC%97%AC%ED%96%89/</link>
 				<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
-				<guid>https://gtcheols.github.io/categories/dev/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Travel</title>
-				<link>https://gtcheols.github.io/categories/travel/</link>
-				<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
-				<guid>https://gtcheols.github.io/categories/travel/</guid>
+				<guid>https://gtcheols.github.io/categories/%EC%97%AC%ED%96%89/</guid>
 				<description></description>
 			</item>
 	</channel>

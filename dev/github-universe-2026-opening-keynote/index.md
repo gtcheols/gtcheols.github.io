@@ -4,7 +4,7 @@ date: 2026-10-29
 draft: false
 tags: ["GitHub", "GitHub Universe", "Copilot", "AI Agent"]
 categories: ["개발"]
-description: "GitHub Universe 2026 오프닝 키노트 'building the next era of software' 내용을 챕터별로 정리한 글"
+description: "GitHub Universe 2026 오프닝 키노트 'building the next era of software' 내용을 챕터별로 정리한 리뷰"
 ---
 
 ## Opening keynote: building the next era of software at GitHub Universe 2026
@@ -17,35 +17,46 @@ description: "GitHub Universe 2026 오프닝 키노트 'building the next era of
 이 글은 위 키노트 영상을 보고 개인적으로 정리한 요약입니다. 내용과 이미지의 저작권은 GitHub/Microsoft에 있습니다.
 {{< /callout >}}
 
-## CHAPTERS
 
-### 00:00 GitHub's explosive growth & agentic shift
+## 00:00 GitHub's explosive growth & agentic shift
 
+{{% caption %}}
 *Jar Parikh (Executive Vice President, CoreAI, Microsoft)*
+{{% /caption %}}
 
-GitHub 의 최근의 기록
+### GitHub
 
+{{% caption %}}
 - Developers on GitHub: +225 Million
 - Octoverse 2026
   - code pushes: 17.9B
   - commits: 34.3B
   - pull requests: 1.3B
   - oss contributions: 2.5B
+{{% /caption %}}
 
-계속해서 새로운 개발자들이 모이고 있고, 매우 많은 push, commits 및 오픈소스 커뮤니티 활동들이 있었고, 매우 빠르게 증가하는 중.
+최근 몇 년 사이에 더 많은 개발자들이, 더 많은 push, commits 을 올리고 있고, 오픈소스 커뮤니티의 활동 또한 빠르게 증가하고 있음
 
 {{< figure src="actions-jobs.jpg" alt="연도별 GitHub Actions 작업량 (2024 / 2025 / 2026)" caption="이미지 출처: GitHub Universe 2026 Opening keynote (GitHub/Microsoft)" >}}
 
-Actions 의 증가 추세만 봐도 엄청나게 변화 하고 있는것을 알 수 있음.
+{{% caption %}}
+Actions 의 증가 추세만 봐도 최근 변화량이 급증한 것을 알 수 있음.
+{{% /caption %}}
 
-### 03:26 Evolving for the agentic era
+결국 Agent 를 활용한 개발이 증가하면서, 더 빠르게 개발이 진행되면서 이러한 현상이 발생 했다는...
+
+
+<br/><br/><br/>
+## 03:26 Evolving for the agentic era
 
 - 최근 수 년동안 개발자들의 역할이 많이 달라짐. 기존에는 코드를 작성는 업무를 했으나, 몇 년 전 부터는 이 업무에 AI 도움을 받기 시작했고, 최근에는 수많은 에이전트 기반의 워크플로우를 관리하는 단계 업무로 달라짐.
 - 개발자 업무의 최종 목표는 기존과 크게 달라지지 않았지만 업무를 처리하는 과정, 메커니즘, 사용하는 시스템(도구)는 완전히 달라졌음.
 - 현재는 Request, Code changes, Product signal, Schedule 등의 이벤트로 인해 새로운 업무가 생겨나고 있고, SDLC(소프트웨어 개발 주기)는 더 이상 선형적이지 않게 되었기 때문에 기존의 SDLC 라는 것은 사실상 붕괴 되었다고 할 수 있음.
 - GitHub는 개방적이고 확장 가능한 방향을 유지하여, 외부의 많은 제품들과 연계하여 사용함으로써 이러한 시대의 변화를 지원하고 있음
 
-### 06:10 GitHub Copilot app & connectors
+
+<br/><br/><br/>
+## 06:10 GitHub Copilot app & connectors
 
 *Cassidy Williams, Sr. Director, Developer Advocacy, GitHub*
 
@@ -55,16 +66,18 @@ Actions 의 증가 추세만 봐도 엄청나게 변화 하고 있는것을 알 
 - 한번 인증 완료 하면 계속 연결하여 사용 가능함.
 - Customize 메뉴에 노출된 항목 중 깃헙 로고가 있는 것은 매번 로그인하지 않아도 됨.
 
-### 09:39 Copilot fusion, Copilot app canvases & Copilot dreaming
+<br/><br/><br/>
+## 09:39 Copilot fusion, Copilot app canvases & Copilot dreaming
 
 #### Copilot Fusion
 
 - 일종의 LLM model organizer로 작업에 필요한 여러 모델을 조율하여 저렴한 비용으로 최고 수준의 결과를 얻을 수 있게 해줌.
 - Artificial Analysis Coding Agent Index에서 Copilot Fusion Max는 60점, Opus 5.5 Max는 62점으로 2점차였지만, 작업당 비용은 절반, 작업시간은 40% 적게 소요됨.
 
-#### Demo
+#### Canvas
 
-- Copilot App 내에서 Canvas: browser, terminal, custom
+- Copilot App 내의 웹 브라우져 처럼 보이는 영역, 실제 브라우져가 아님
+- Canvas 유형 : browser, terminal, custom
 - Browser Canvas에 웹페이지를 띄워서 Agent가 이 페이지와 상호작용 하며 테스트 진행.
 
 #### Copilot Dreaming
@@ -72,7 +85,8 @@ Actions 의 증가 추세만 봐도 엄청나게 변화 하고 있는것을 알 
 - GitHub Copilot의 맥락(context)을 백그라운드에서 자동으로 유지, 개선하는 퍼블릭 프리뷰 기능.
 - 메모리, 지침을 새로운 환경이나 모델에 맞도록 분석하고, 자동으로 개선하는 기능.
 
-### 14:55 Copilot projects & Copilot automations
+<br/><br/><br/>
+## 14:55 Copilot projects & Copilot automations
 
 *Burke Holland, Principal Cloud Advocate, Microsoft*
 
@@ -84,7 +98,8 @@ Actions 의 증가 추세만 봐도 엄청나게 변화 하고 있는것을 알 
 - 개발 완료 및 배포 전에 결과물과 거의 유사한 목업을 얻을 수 있어서 이것으로 마케팅에 활용 가능.
 - 각 에이전트들은 로컬 또는 클라우드에서 동작할 수 있어서, 클라우드에서 동작 하는 경우 작업자가 노트북을 닫아도 작업이 진행됨.
 
-### 19:59 Agent-powered quality & security
+<br/><br/><br/>
+## 19:59 Agent-powered quality & security
 
 *Damian Brady, Staff Developer Advocate, GitHub*
 
@@ -116,7 +131,8 @@ Actions 의 증가 추세만 봐도 엄청나게 변화 하고 있는것을 알 
 - Agent에게 Merge pull request 기능을 허용하면 Agent는 이슈를 수정하여 PR을 등록한 후 리뷰하고 머지하여 사실상 전체 작업을 완료함.
 - Agent를 이용한 전체 플랫폼을 통해서 빠르고 안전하게 확장하고 발전할 수 있음.
 
-### 31:25 Rebuilding GitHub's core infrastructure
+<br/><br/><br/>
+## 31:25 Rebuilding GitHub's core infrastructure
 
 *The next big evolution of our Git architecture*
 
@@ -139,14 +155,16 @@ GitHub는 현재 수많은 요청이 몰리고 있지만, 모두 잘 처리하�
 
 GitHub가 Git 객체 저장방식을 변경하여 개선되었으므로, Open Claw는 비효율적으로 기다리는 일이 줄게 될 것이고, 더 빠르게 처리가 가능하게 될 것으로 봄.
 
-### 40:00 The future of software development
+<br/><br/><br/>
+## 40:00 The future of software development
 
 GitHub가 현재 진행하는 것들:
-
+{{% caption %}}
 - 새로운 스토리지 아키텍처로 마이그레이션은 진행중
 - GitHub AI 게이트웨이 개선: 게이트웨이 최적화, 프롬프트 캐싱, 지연시간 최소화, 하네스 성능 향상
 - Actions 개선
 - Azure와 GitHub의 기존 데이터센터간의 통신 회선을 확장 및 최적화
+{{% /caption %}}
 
 소프트웨어를 만드는 방식은 변화하고 있지만 개발자의 중요성은 여전히 높음.
 코드를 작성하는 것이 아닌 문제를 이해하고 개선 방향을 떠올려서 현실 세계에 구현하는 능력과 추진력이 필요함.
@@ -159,13 +177,17 @@ GitHub의 커뮤니티는 한 사람의 아이디어를 공유하고 또 다른 
 {{< /callout >}}
 
 
+<br/><br/><br/>
+## 후기
 
-## 개인적인 후기
+{{% box %}}
 
-> 원래 이 행사에 크게 관심이 있었던 것도, 꼭 보려고 했던 것도 아닌데, 우연히 영상을 보기 시작해서, 새벽에 늦게 잠들었었습니다. 이 글은 이후에 차분히 다시 보면서 내용을 좀 정리한 것이네요.
->
-> 참고로 저는 GitHub 의 Copilot 을 사용하고 있지는 않습니다. 다만 최근의 소프트웨어 개발 씬의 이슈, AI Agent 와 같은 흐름이나 분위기를 느껴보기에는 좋은 것 같습니다.
->
-> 이런 저런 컨퍼런스를 들으러 다니는 것을 좋아하지만, 이것 때문에 미국까지 가는 건 쉽지 않은데 이렇게 영상으로 스트리밍 해주니 감사하네요..ㅋ
+ 원래 이 행사에 크게 관심이 있었던 것도, 꼭 보려고 했던 것도 아닌데, 우연히 영상을 보기 시작해서, 새벽에 늦게 잠들었었습니다. 이 글은 이후에 차분히 다시 보면서 내용을 좀 정리한 것이네요.
+<br/><br/>
+참고로 저는 GitHub 의 Copilot 을 사용하고 있지는 않습니다. 다만 최근의 소프트웨어 개발 씬의 이슈, AI Agent 와 같은 흐름이나 분위기를 느껴보기에는 좋은 것 같습니다.
+<br/><br/>
+ 이런 저런 컨퍼런스를 들으러 다니는 것을 좋아하지만, 이것 때문에 미국까지 가는 건 쉽지 않은데 이렇게 영상으로 스트리밍 해주니 감사하네요..ㅋ
 다른 세션들도 많이 공유해주면 좋았겠지만.. 일단 저는 요거라도 ㅋㅋ
+
+{{% /box %}}
 

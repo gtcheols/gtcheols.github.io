@@ -2,8 +2,9 @@
 title: "TinyGo Conference 2026 in JAPAN"
 description: "TinyGo 라는 주제로 열린 컨퍼런스에 다녀왔습니다"
 date: 2026-10-10
+draft: false
 tags: ["tinygo_conf", "dev", "tinygo_keeb", "conference"]
-categories: ["travel", "dev"]
+categories: ["개발", "여행"]
 ---
 
 ## 개요
@@ -19,26 +20,32 @@ categories: ["travel", "dev"]
 
 좀 아쉬운건, 뒷풀이를 안 가서... 아직도 이 분들과 그다지 친해지지 못했다는..ㅋㅋ
 
+{{< figure src="tinygo2026_001.jpg" alt="TinyGo Conference 2026 in JAPAN" caption="행사장 AP 아키하바라" >}}
+
+{{% box %}}
 - 홈페이지 : [TinyGo Conference / 2026](https://conf.tinygo-keeb.org/2026/)
 - TinyGo Keeblog : [TinyGo Conference 2026 in JAPAN を開催しました](https://tinygo-keeb.org/blog/?p=348)
 - 날짜 : 2026-10-10 (토)
 - 장소 : AP 아키하바라 4F
-
+{{% /box %}}
 
 행사는 아침부터 오프닝 세션을 시작으로 계속해서 발표 세션이 진행되고, 오후에는 라이트닝 토크, 클로징 세션으로 마무리 되는 발료가 있고, 그 뒤에 공간에서는 이런저런 만들어온 것들을 전시하거나, 설명하는 전시, 그리고 옆에 다른 방에서는 솔더링 워크샵이 동시에 진행되었습니다.
 
 싱가포르에서 솔더링 워크샵을 경험해봐서 이번에는 참여를 안했는데, 이후에 보니 참여할 것을 그랬다는 생각이 계속 드네요. 지난번에는 zero-kb02 이라는 키보드를 만드는 것이었고, 이번에는 명찰로 사용되는 뱃지에 이런저런 기능을 올리는 내용이어서 기념품으로 들고와도 재미 있었을텐데, 아무튼 아쉽네요..
 
+{{< figure src="tinygo2026_003.jpg" alt="TinyGo Conference 2026 in JAPAN" caption="Dave 님의 장남감들" >}}
 
 ---
 ## 세션
 
 다음은 이 날 들었던 여러 세션에 대한 간략한 후기 입니다.
 
-
 ### 오프닝 세션
 
-[TinyGo & TinyGo Keeb & … 2026](https://docs.google.com/presentation/d/137GIdoR07WBciKCYU0iF6gSrTy7Pa-p4jmZlJdFd7dw/edit?usp=sharing)
+{{< figure src="tinygo2026_002.jpg" alt="TinyGo Conference 2026 in JAPAN" caption="오프닝 세션" >}}
+
+
+[🔗 TinyGo & TinyGo Keeb & … 2026](https://docs.google.com/presentation/d/137GIdoR07WBciKCYU0iF6gSrTy7Pa-p4jmZlJdFd7dw/edit?usp=sharing)
 
 
 
@@ -48,18 +55,24 @@ categories: ["travel", "dev"]
 
 다행히 미리 홈페이지에서 발표 내용 요약을 읽고 참석했기 때문에, 전반적으로 이해하는 데 큰 어려움이 없었습니다. ㅋ
 
+{{< figure src="tinygo2026_004.jpg" alt="TinyGo Conference 2026 in JAPAN" caption="CONEJO 님의 테이블" >}}
+
+{{< figure src="tinygo2026_005.jpg" alt="TinyGo Conference 2026 in JAPAN" caption="엑스포 공간 및 발표장" >}}
+
+<br/><br/><br/>
 
 ### Embedded Development in the Multi-Core Era: When Mutex Breaks Down
 
 *rdon-key*
 
 > 임베디드 멀티코어 환경에서는 뮤텍스(Mutex)를 설정하거나 인터럽트를 금지하더라도 경합(race condition) 문제가 여전히 발생할 수 있습니다. 이는 해당 조치들이 코어의 동작을 제어할 뿐, 코어 외부의 요소까지 제어하는 ​​것은 아니기 때문입니다. 본 세션에서는 TinyGo의 RP2 USB 드라이버에서 실제로 발생했던 경합 사례(PR#5472)를 바탕으로, 처리 순서가 뒤바뀌는 것만으로도 완료 이벤트가 유실되는 메커니즘을 설명합니다. 또한 뮤텍스의 한계를 파악하고, 펌웨어 개발 시 어떤 부분을 중점적으로 점검해야 할지 공유하고자 합니다.
-
-[Github](https://github.com/tinygo-org/tinygo/pull/5472)
+> 
+> [🔗 tinygo/pull/5472](https://github.com/tinygo-org/tinygo/pull/5472)
 
 일반적인 서버에서의 개발 환경에서는 당연한 Mutex 를 이용한 동기화가, 임베디드 환경, 그리고 멀티코어 임베디드 환경에서는 좀 더 복잡한 상황을 맞게 된다는 이야기 였습니다. 이러한 환경에서는 장치 드라이버 조차도 직접 구현하게 되면서 여기에 무작정 mutex 를 사용했다가는, 의도하지 않은 동작을 할 수 있다는 뭐 그런 이야기 였어요.
 
 
+<br/><br/><br/>
 
 ### Building a Clock with TinyGo Led Me Down the Rabbit Hole from DNS to TLS
 
@@ -75,18 +88,20 @@ categories: ["travel", "dev"]
 >
 > PC 환경의 Go에서는 당연하게 사용할 수 있는 네트워크 기능을 TinyGo 환경에서 어떻게 구현하고, 미완성된 부분을 어떻게 만들어 나갈 것인가. 그 과정의 흥미로움을 여러분과 공유하고자 합니다.
 
-[Github](https://github.com/soypat/lneto)
+[🔗 https://github.com/soypat/lneto](https://github.com/soypat/lneto)
 
 단순하게 NTP 와 GPS 정보를 기반으로 동작하는 시계를 만들려고 했다는데, tinyGo 의 패키지에는 crypto/tls 와 같은 패키지가 없어서 일반적인 HTTPS 접속이 안된다는 것을 알게 되었고, 이 원인을 찾아서 해결 해보려고 이런저런 시행착오를 격었지만, 결국 어찌어찌 빌드를 해도 메모리가 부족하거나, 빌드본 크기가 너무 커지는 등의 이슈를 만나서 해결하지 못한것 같네요. 이런 것은 임베디드 환경이라는 제한된 상황, 그리고 사실상 개발 진행중인 비표준 환경인 tinyGo 의 상황을 보여주는 것 같았습니다. 하지만 이렇게 시도하고 고민하는 사람들이 이런 상황을 즐기고 있는 것으로 보여서, 뭔가 신기하면서도 재미 있어 보였습니다.
 
 **슬라이드 내 요약**
 
+{{% box %}}
 - TinyGo의 네트워크 관련 부분은 일반적인 Go와 완전히 달라서 흥미롭습니다.
 - TinyGo 라이브러리를 개발할 때는 메모리 절약을 고려해야 해서 재미있습니다.
 - TinyGo에서 TLS를 구현하려면 해야 할 일이 아주 많습니다.
 - **TinyGo는 통신 구현도 재미있으니, 여러분도 함께 커밋(commit)해 봅시다!**
+{{% /box %}}
 
-
+<br/><br/><br/>
 
 ### Understanding HID through TinyGo
 
@@ -110,12 +125,13 @@ categories: ["travel", "dev"]
 >
 > TinyGo 구현 사례를 통해 HID 장치의 입력 신호가 호스트로 전달되는 기본적인 원리를 이해할 수 있습니다.
 
-[TinyGoから理解するHID](https://slides.rin2yh.com/understanding-hid-through-tinygo/)
+[🔗 TinyGoから理解するHID](https://slides.rin2yh.com/understanding-hid-through-tinygo/)
 
 이 tinygo-keeb 에서 주최하는 워크샵을 통해 얻게된 zero-kb02 를 가지고 뭔가를 해보려다 보니 HID 라는 용어를 만나게 되었고, 이게 어떻게 구성되어있고, 어떤 흐름으로 동작하는지, 어떻게 활용할지에 대한 간단한 이야기 들 이었습니다.
 
 외장 키보드를 연결하다보면 슬쩍슬쩍 만나는 용어라서 다들 어디선가 들어본 단어 일텐데, 이걸 고민하는구나? 하기도 했고, 지난번 워크샵에서 저도 이걸 이용해서 뭔가를 만들 수 있구나 ? 하는 생각만 했었는데, 좀 더 깊게 고민을 한 세션 이었습니다.
 
+<br/><br/><br/>
 
 ### Connecting TinyGo and Go with RPC
 
@@ -128,6 +144,8 @@ categories: ["travel", "dev"]
 엑스포에서 전시하신 레이싱 휠과 레이싱 게임 간의 인터페이스를 구현하기 위해서 irpc 를 사용한거로 이해 했습니다.ㅋ
 
 
+<br/><br/><br/>
+
 ### Big / Tiny GOTOOLCHAIN
 
 *sivchari*
@@ -136,14 +154,16 @@ categories: ["travel", "dev"]
 
 go 와 tinyGo 를 모두 소스코드를 내려받아서 빌드하여 사용하는 과정에 go 와 tinyGo 의 버전 호환성 이슈가 항상 있고, 이럴때 특정 go 특정 tinyGo 버전을 변경해서 사용하기 편하게 하는 방법을 고민하다가 golang.org/dl 이라는 repo 를 참고해서 sivchari/tinygo-dl 라는 repo 를 만들어봤다는 내용 입니다. 저는 가능한 검증된 빌드 버전을 사용하는 편이라, 잘 하지 않지만... 이렇게도 사용하시는구나 싶었어요.ㅋ 
 
-- [TinyGo - Go compatibility matrix](https://cs.opensource.google/go/dl) 
-- [golang.org/dl repo](https://cs.opensource.google/go/dl) 
-- [sichari/tinygo-dl](https://github.com/sivchari/tinygo-dl) 
+- [🔗 TinyGo - Go compatibility matrix](https://cs.opensource.google/go/dl) 
+- [🔗 golang.org/dl repo](https://cs.opensource.google/go/dl) 
+- [🔗 sichari/tinygo-dl](https://github.com/sivchari/tinygo-dl) 
 
 참고로 이 repo 를 찾아보니 다음과 같은 내용 이네요..ㅋ
 
-[**sivchari/tinygo-dl**](https://github.com/sivchari/tinygo-dl/blob/main/tinygo0.42.0/main.go)은 Go 언어(Golang)의 도구인 `golang.org/dl`과 유사하게, **원하는 특정 버전의 TinyGo를 독립적으로 다운로드하고 관리할 수 있도록 도와주는 오픈소스 유틸리티**입니다
+[*🔗 *sivchari/tinygo-dl**](https://github.com/sivchari/tinygo-dl/blob/main/tinygo0.42.0/main.go)은 Go 언어(Golang)의 도구인 `golang.org/dl`과 유사하게, **원하는 특정 버전의 TinyGo를 독립적으로 다운로드하고 관리할 수 있도록 도와주는 오픈소스 유틸리티**입니다
 
+
+<br/><br/><br/>
 
 ### Observability with TinyGo? Can We Use OpenTelemetry with TinyGo?
 
@@ -162,17 +182,18 @@ go 와 tinyGo 를 모두 소스코드를 내려받아서 빌드하여 사용하�
 OpenTelemetry 라는게, 특정 벤더나 장치, 기술등에 얽매이지 않고 사용할 수 있도록 한다는게 목표라서, 서버간 통신이 아닌 임베디드 장치와의 통신도 이미 당연히 잘 되고 있겠구나 했는데, tinyGo 로 구현해보니 실상은 쉽지 않았다는 이야기 입니다. 
 
 **슬라이드의 결론**
-
+{{% box %}}
 - OTel Go SDK를 사용할 수 없는 원인은 메모리 제한이 아니라, 호스트 OS에 대한 의존성과 `reflect` 기능이 구현되어 있지 않기 때문입니다.
 - OTLP 스키마는 사용할 수 있습니다. `encoding/json`, 직접 구현한 HTTP 클라이언트, 그리고 SNTP를 통해 통신이 가능합니다.
 - 마이크로컨트롤러 환경에서 문제가 되는 것은 메모리 용량 자체보다는, 전송할 때마다 발생하는 메모리 할당과 고루틴(goroutine) 스택 문제입니다.
 - 디바이스는 해당 환경에서만 알 수 있는 정보만 전송하고, TLS 처리나 속성(attribute) 추가는 Collector에 맡깁니다.
 - Collector 이후 단계는 서버에서 사용하는 OpenTelemetry와 동일한 파이프라인을 거칩니다. 
 
-PoC 결과 : [https://github.com/ymotongpoo/tinygo-otel-esp32](https://github.com/ymotongpoo/tinygo-otel-esp32)
+PoC 결과 : [🔗 https://github.com/ymotongpoo/tinygo-otel-esp32](https://github.com/ymotongpoo/tinygo-otel-esp32)
+{{% /box %}}
 
 
-
+<br/><br/><br/>
 
 ### [LT] Turning the zero-kb02 from the Workshop into a Physical UI for Codex
 
@@ -182,11 +203,12 @@ PoC 결과 : [https://github.com/ymotongpoo/tinygo-otel-esp32](https://github.co
 
 zero-kb02 를 어디에 사용할까 하다가,  codex micro 라는 제품에 대해 알게 되었는데, 뭔가 비슷한 구성이라는 생각이 들어서 이와 유사한 걸 만들어보게 되었다는 내용 입니다.  
 
-- 참고 : [Codex Micro](https://worklouder.cc/codex-micro) 
+- 참고 : [🔗 Codex Micro](https://worklouder.cc/codex-micro) 
 
 이런걸 제품화 해서 팔고 있느지 몰랐는데, 찾아보니 정말 비슷한 구성이더군요.
 
 
+<br/><br/><br/>
 
 ### [LT] zero-micro: Built it Because Codex Micro Looked Just Like zero-kb02
 
@@ -200,9 +222,10 @@ zero-kb02 를 어디에 사용할까 하다가,  codex micro 라는 제품에 �
 
 뭔가 웃지기만 이전 라이트닝 토크 세션과 거의 같은 주제 입니다. ㅋㅋ. 지난 싱가포르 고퍼콘에서 워크샵에서 솔더링(땜질?)을 많이 도와주셨던 makki 상의 발표 였네요. 
 
-- 참고 : [zero-micro](https://github.com/makiuchi-d/zero-micro) 
+- 참고 : [🔗 zero-micro](https://github.com/makiuchi-d/zero-micro) 
 
 
+<br/><br/><br/>
 
 ### [LT] Something Small, Cute, and Go
 
@@ -210,13 +233,14 @@ zero-kb02 를 어디에 사용할까 하다가,  codex micro 라는 제품에 �
 
 > 직접 제작한 가정용 IoT 기기는 일단 운용을 시작하면 유지보수나 리팩토링을 뒤로 미루기 쉽지 않나요? 그러다 보면 어느새 라이브러리 노후화, 언어 버전의 EOL(지원 종료), 하드코딩 누적과 같은 기술 부채가 쌓이게 됩니다. 저는 10년 전 Python으로 구현해 매년 여름마다 가동 중인 가정용 수조 쿨러를 소재로, TinyGo와 Claude Code를 조합해 리팩토링을 수행한 사례를 소개하고자 합니다. ① 방치된 IoT 기기의 기술 부채: 10년 전 Python으로 구현한 수조 쿨러가 유지보수 없이 매년 계속 가동되고 있는 사례를 소개합니다. 어떤 라이브러리를 설치했는지조차 잊어버렸고, Python 자체도 EOL을 맞이했으며, 코드 곳곳에는 하드코딩이 남아 있었습니다. ② TinyGo가 열어준 리팩토링의 길: 싱글 바이너리의 간편함에 매료된 이후 7~8년 동안 Go 언어를 사용해 왔으며, 개인 OSS도 대부분 Go로 구현했습니다. 이전에는 IoT 분야에서 선택지가 아니었던 Go가 TinyGo의 등장으로 현실적인 선택지가 되었습니다. 지금이야말로 리팩토링을 시작할 때입니다! ③ Claude Code를 활용한 리팩토링과 그 이후: 기존 Python 구현을 바탕으로 Claude Code를 활용해 리팩토링을 진행했습니다. 이미 검증된 기존 코드가 있었기에 구현이 무너지지 않고 깔끔한 코드로 완성할 수 있었습니다. 수많은 의존 라이브러리는 작고 귀여운 하나의 싱글 바이너리로 다시 태어났으며, 경량화를 통해 확보된 여유 공간은 새로운 기능을 추가할 수 있는 발판이 되었습니다. 집에 잠들어 있는 오래된 IoT 기기의 리팩토링, 꼭 TinyGo로 시도해 보세요.
 
-[なんか小さくてかわいいGoなやつ | ドクセル](https://www.docswell.com/s/ma_anago/54NW8J-2026-10-10-162041#p1)
+[🔗 なんか小さくてかわいいGoなやつ | ドクセル](https://www.docswell.com/s/ma_anago/54NW8J-2026-10-10-162041#p1)
 
 오래전에 Python 으로 만들었던 코드가 신기하게도 아직 잘 돌아가고 있긴 했는데, 이걸 최신화 하려고 하면서 tinyGo 로 다시 구현했고 이건 Claude Code 의 도움을 바아서 진행했더니, 빠르고 효과적이었다는 내용 이었습니다. 
 
 보통 집에서 이런걸 하나요?..ㅋㅋ 아무튼 재미 있어 보였습니다.
 
 
+<br/><br/><br/>
 
 ### [LT] Learning Go by Building Things 
 
@@ -230,7 +254,9 @@ zero-kb02 를 어디에 사용할까 하다가,  codex micro 라는 제품에 �
 
 아무튼 goeducation 이라는 사이트를 운영하고 있다고 하시는데 이와 관련된 내용 이었네요, 대략 기억 나는건 딸에게 코딩을 가르치려고 하면서 시작 되었다는.. ㅋㅋ 실제 행사장에 딸 아이로 추정되는  여자아이가 계속 놀고 있었네요..ㅋㅋ
 
-- 참고 : [Go Education Project](https://goeducation.net/) 
+- 참고 : [🔗 Go Education Project](https://goeducation.net/) 
+
+<br/><br/><br/>
 
 ### [LT] GBA Development with TinyGo in 5 Minutes
 
@@ -242,16 +268,17 @@ zero-kb02 를 어디에 사용할까 하다가,  codex micro 라는 제품에 �
 
 tinyGo 로 GBA 용 어플리케이션을 개발하는 프로젝트가 있더군요, ㅋㅋ 실제 이걸 ROM 으로 구워서 사용하는지는 모르겠지만, tinyGo 를 이렇게도 활용하는구나~ 하는 그런 내용 이었습니다. 
 
-- 참고 : [tinygba](https://github.com/tinygo-org/tinygba) 
+- 참고 : [🔗 tinygba](https://github.com/tinygo-org/tinygba) 
 
 
 
+<br/><br/><br/>
 
 ### 클로징 세션
 
 원래는 deadprogram (ron evans) 님의 세션이 예정되어 있었으나, 참석하지 못하셨다고 하네요. 이후에 애프터 파티 때는 영상으로 참여하신듯 한데, ㅋㅋㅋ 처음 갔던 싱가포르 고퍼콘에서 화려한 엔딩 세션을 진행 하셔서 그때 부터 살짝 좋아하는 분 입니다.ㅋㅋ 
 
-
+<br/><br/><br/>
 
 ---
 
@@ -261,6 +288,6 @@ tinyGo 로 GBA 용 어플리케이션을 개발하는 프로젝트가 있더군�
 
 대형 컨퍼런스들은 대부분 큰 기업의 신제품 발표나, 소개 영업 성격의 내용이 많다면, 이런 행사들은 개발자들의 요즘 고민거리들 부터 현장에서의 어떤 키워드가 자주 언급되는지 같은 이야기들을 살짝 살짝 느낄 수 있어서 좋은데요. 이번 tinyGo 컨퍼런스는 이 중에서도 소규모 여서 그런지 , 또 다릅니다. gopher 스럽다고 해야 할지, 뭔가 한마디로 요약하기는 좀 어렵지만, 신선하고 흥미롭긴 합니다.ㅋ 
 
-무엇보다 이 tinygo-keeb 모임의 분위기가 왠지 좋아 보여서 이후에도 또 만나보고 싶다는 생각을 하게 되네요, 
+무엇보다 이 **tinygo-keeb** 모임의 분위기가 왠지 좋아 보여서 이후에도 또 만나보고 싶다는 생각을 하게 되네요, 
 
 

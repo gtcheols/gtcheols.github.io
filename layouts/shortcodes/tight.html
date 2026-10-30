@@ -1,0 +1,12 @@
+{{- if not (.Page.Store.Get "tightcss") -}}
+<style>
+.tight-list li { margin: 0.1em 0; line-height: 1.4; }
+.tight-list ul, .tight-list ol { margin: 0.15em 0; }
+.tight-list li > p { margin: 0; }
+</style>
+{{- .Page.Store.Set "tightcss" true -}}
+{{- end -}}
+<div class="tight-list">
+{{ .Inner }}
+</div>
+

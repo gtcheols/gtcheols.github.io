@@ -1,0 +1,18 @@
+{{- if not (.Page.Store.Get "boxcss") -}}
+<style>
+.post-box {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, currentColor 6%, transparent);
+}
+.post-box > :first-child { margin-top: 0; }
+.post-box > :last-child { margin-bottom: 0; }
+</style>
+{{- .Page.Store.Set "boxcss" true -}}
+{{- end -}}
+<div class="post-box">
+{{ .Inner }}
+</div>
+

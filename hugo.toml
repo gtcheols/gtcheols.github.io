@@ -73,6 +73,7 @@ buildExpired = false
 
   # params.portrait is deliberately unset so the About page shows the empty
   # portrait frame — set it to an image under assets/ or static/ to fill it.
+  portrait = "images/rcnd-labs-logo_01.jpg"
 
   # --- posts ---------------------------------------------------------------
   # A thin accent bar at the top of a post, tracking scroll. Off by default;

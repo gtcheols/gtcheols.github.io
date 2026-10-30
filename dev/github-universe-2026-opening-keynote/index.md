@@ -11,7 +11,7 @@ description: "GitHub Universe 2026 오프닝 키노트 'building the next era of
 
 원본 영상: GitHub Universe 2026 Opening keynote
 
-{{< youtube xbCa0aa4tRM >}}
+{{< youtube AArI948SDz8 >}}
 
 {{< callout type="note" title="안내" >}}
 이 글은 위 키노트 영상을 보고 개인적으로 정리한 요약입니다. 내용과 이미지의 저작권은 GitHub/Microsoft에 있습니다.
@@ -21,26 +21,24 @@ description: "GitHub Universe 2026 오프닝 키노트 'building the next era of
 ## 00:00 GitHub's explosive growth & agentic shift
 
 {{% caption %}}
-*Jar Parikh (Executive Vice President, CoreAI, Microsoft)*
+*Jay Parikh (Executive Vice President, CoreAI, Microsoft)*
 {{% /caption %}}
 
 ### GitHub
 
-{{% caption %}}
 - Developers on GitHub: +225 Million
-- Octoverse 2026
+- Octoverse 2026 [🔗 ](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/)
   - code pushes: 17.9B
   - commits: 34.3B
   - pull requests: 1.3B
   - oss contributions: 2.5B
-{{% /caption %}}
 
 최근 몇 년 사이에 더 많은 개발자들이, 더 많은 push, commits 을 올리고 있고, 오픈소스 커뮤니티의 활동 또한 빠르게 증가하고 있음
 
 {{< figure src="actions-jobs.jpg" alt="연도별 GitHub Actions 작업량 (2024 / 2025 / 2026)" caption="이미지 출처: GitHub Universe 2026 Opening keynote (GitHub/Microsoft)" >}}
 
 {{% caption %}}
-Actions 의 증가 추세만 봐도 최근 변화량이 급증한 것을 알 수 있음.
+슬라이드 내에 표현된 Actions 의 증가 추세만 봐도 최근 변화량이 급증한 것을 알 수 있음.
 {{% /caption %}}
 
 결국 Agent 를 활용한 개발이 증가하면서, 더 빠르게 개발이 진행되면서 이러한 현상이 발생 했다는...
@@ -61,7 +59,7 @@ Actions 의 증가 추세만 봐도 최근 변화량이 급증한 것을 알 수
 *Cassidy Williams, Sr. Director, Developer Advocacy, GitHub*
 
 #### Copilot Connector
-- [copilot connector docs](https://docs.github.com/ko/copilot/concepts/customizations/copilot-connectors)
+- [🔗 copilot connector docs](https://docs.github.com/ko/copilot/concepts/customizations/copilot-connectors)
 - GitHub에서 외부 서비스(Slack, Work IQ, Vercel, Netlify, Sentry..)와 인터페이스하기 위한 관리형 서비스.
 - 한번 인증 완료 하면 계속 연결하여 사용 가능함.
 - Customize 메뉴에 노출된 항목 중 깃헙 로고가 있는 것은 매번 로그인하지 않아도 됨.
@@ -71,6 +69,7 @@ Actions 의 증가 추세만 봐도 최근 변화량이 급증한 것을 알 수
 
 #### Copilot Fusion
 
+- [🔗 The Next Web: GitHub launches Copilot Fusion](https://thenextweb.com/news/github-universe-copilot-fusion-octoverse-agents)
 - 일종의 LLM model organizer로 작업에 필요한 여러 모델을 조율하여 저렴한 비용으로 최고 수준의 결과를 얻을 수 있게 해줌.
 - Artificial Analysis Coding Agent Index에서 Copilot Fusion Max는 60점, Opus 5.5 Max는 62점으로 2점차였지만, 작업당 비용은 절반, 작업시간은 40% 적게 소요됨.
 
@@ -97,6 +96,7 @@ Actions 의 증가 추세만 봐도 최근 변화량이 급증한 것을 알 수
 - 사용자는 Orchestrator와 대화를 하기 때문에 전체 문맥이 유지되고, 하위 에이전트들의 결과를 취합하여 다시 사용자와 대화 하게 되므로 사용자는 개별 에이전트의 처리 결과를 기다렸다가 다음 요청을 하지 않아도 됨.
 - 개발 완료 및 배포 전에 결과물과 거의 유사한 목업을 얻을 수 있어서 이것으로 마케팅에 활용 가능.
 - 각 에이전트들은 로컬 또는 클라우드에서 동작할 수 있어서, 클라우드에서 동작 하는 경우 작업자가 노트북을 닫아도 작업이 진행됨.
+- [🔗 Runtime Wrie: Copilot agent orchestration](https://runtimewire.com/article/github-copilot-agent-orchestration-universe-2026)
 
 <br/><br/><br/>
 ## 19:59 Agent-powered quality & security
@@ -146,14 +146,16 @@ GitHub는 현재 수많은 요청이 몰리고 있지만, 모두 잘 처리하�
 
 #### Rebuilding the foundation
 
-- 호스팅을 Azure로 이전.
+- 호스팅을 Azure 멀티 리전으로 이전.
 - **One lock per branch**: git write 정책을 변경하여, branch 단위로 lock 되도록 함.
 - **Azure Blob Storage**: Azure의 스토리지 시스템을 개선하여 전체 처리속도를 개선.
-- 결과 기존보다 **180배** 높은 throughput을 얻어냄.
+- 시스템 개선 후 스토리지 성능이 기존보다 **180배** 높은 throughput을 처리하는 결과를 얻음
+- 전체 시스템이 변경된 것은 아니고 점차 교체 중이며, 내년 완료 예정
 
-#### Open Claw
 
-GitHub가 Git 객체 저장방식을 변경하여 개선되었으므로, Open Claw는 비효율적으로 기다리는 일이 줄게 될 것이고, 더 빠르게 처리가 가능하게 될 것으로 봄.
+#### OpenClaw 측 인터뷰
+
+GitHub가 Git 객체 저장방식을 변경하여 개선되었으므로, OpenClaw는 비효율적으로 기다리는 일이 줄게 될 것이고, 더 빠르게 처리가 가능하게 될 것으로 봄.
 
 <br/><br/><br/>
 ## 40:00 The future of software development

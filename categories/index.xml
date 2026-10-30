@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sat, 10 Oct 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://gtcheols.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>개발</title>
+				<link>https://gtcheols.github.io/categories/%EA%B0%9C%EB%B0%9C/</link>
+				<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/categories/%EA%B0%9C%EB%B0%9C/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Dev</title>
 				<link>https://gtcheols.github.io/categories/dev/</link>

@@ -10,9 +10,37 @@
 		
 		
 		
-			<lastBuildDate>Sat, 10 Oct 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://gtcheols.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>AI Agent</title>
+				<link>https://gtcheols.github.io/tags/ai-agent/</link>
+				<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/tags/ai-agent/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Copilot</title>
+				<link>https://gtcheols.github.io/tags/copilot/</link>
+				<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/tags/copilot/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>GitHub</title>
+				<link>https://gtcheols.github.io/tags/github/</link>
+				<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/tags/github/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>GitHub Universe</title>
+				<link>https://gtcheols.github.io/tags/github-universe/</link>
+				<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/tags/github-universe/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Conference</title>
 				<link>https://gtcheols.github.io/tags/conference/</link>

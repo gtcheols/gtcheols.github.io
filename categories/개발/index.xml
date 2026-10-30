@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>개발 on Blog of GTCheols</title>
+		<link>https://gtcheols.github.io/categories/%EA%B0%9C%EB%B0%9C/</link>
+		<description>Recent content in 개발 on Blog of GTCheols</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://gtcheols.github.io/categories/%EA%B0%9C%EB%B0%9C/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>GitHub Universe 2026 online - Opening keynote 정리</title>
+				<link>https://gtcheols.github.io/dev/github-universe-2026-opening-keynote/</link>
+				<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://gtcheols.github.io/dev/github-universe-2026-opening-keynote/</guid>
+				<description>&lt;h2 id=&#34;opening-keynote-building-the-next-era-of-software-at-github-universe-2026&#34;&gt;Opening keynote: building the next era of software at GitHub Universe 2026&lt;a class=&#34;heading-anchor&#34; href=&#34;#opening-keynote-building-the-next-era-of-software-at-github-universe-2026&#34; aria-label=&#34;Link to this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;원본 영상: GitHub Universe 2026 Opening keynote&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/xbCa0aa4tRM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#xA;&lt;aside class=&#34;callout callout--note&#34;&gt;&#xA;  &lt;span class=&#34;callout__icon&#34; aria-hidden=&#34;true&#34;&gt;i&lt;/span&gt;&#xA;  &lt;span class=&#34;callout__text&#34;&gt;&#xA;    &lt;span class=&#34;callout__label&#34;&gt;안내&lt;/span&gt;&#xA;    &lt;span class=&#34;callout__body&#34;&gt;&lt;p&gt;이 글은 위 키노트 영상을 보고 개인적으로 정리한 요약입니다. 내용과 이미지의 저작권은 GitHub/Microsoft에 있습니다.&lt;/p&gt;&#xA;&lt;/span&gt;&#xA;  &lt;/span&gt;&#xA;&lt;/aside&gt;&#xA;&#xA;&lt;h2 id=&#34;chapters&#34;&gt;CHAPTERS&lt;a class=&#34;heading-anchor&#34; href=&#34;#chapters&#34; aria-label=&#34;Link to this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;0000-githubs-explosive-growth--agentic-shift&#34;&gt;00:00 GitHub&amp;rsquo;s explosive growth &amp;amp; agentic shift&lt;a class=&#34;heading-anchor&#34; href=&#34;#0000-githubs-explosive-growth--agentic-shift&#34; aria-label=&#34;Link to this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Jar Parikh (Executive Vice President, CoreAI, Microsoft)&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

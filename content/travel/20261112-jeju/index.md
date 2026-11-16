@@ -4,7 +4,7 @@ draft: false
 build:
   list: never
   render: always
-slug: jeju
+slug: 20261112-jeju
 title: '2026-11 제주도 여행'
 ---
 

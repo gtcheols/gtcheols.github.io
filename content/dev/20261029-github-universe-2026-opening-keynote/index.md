@@ -5,6 +5,7 @@ draft: false
 tags: ["GitHub", "GitHub Universe", "Copilot", "AI Agent"]
 categories: ["개발"]
 description: "GitHub Universe 2026 오프닝 키노트 'building the next era of software' 내용을 챕터별로 정리한 리뷰"
+slug: github-universe-2026-opening-keynote
 ---
 
 ## Opening keynote: building the next era of software at GitHub Universe 2026

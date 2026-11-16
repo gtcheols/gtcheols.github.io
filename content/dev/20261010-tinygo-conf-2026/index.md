@@ -5,6 +5,7 @@ date: 2026-10-10
 draft: false
 tags: ["tinygo_conf", "dev", "tinygo_keeb", "conference"]
 categories: ["개발", "여행"]
+slug: tinygo-conf-2026
 ---
 
 ## 개요

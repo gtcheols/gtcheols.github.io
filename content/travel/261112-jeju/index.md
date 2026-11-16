@@ -4,6 +4,7 @@ draft: false
 build:
   list: never
   render: always
+slug: jeju
 title: '2026-11 제주도 여행'
 ---
 

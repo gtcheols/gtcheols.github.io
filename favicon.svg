@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16 8 168 168" width="256" height="256">
+<title>Logo</title>
+<rect x="16" y="8" width="168" height="168" rx="40" fill="#2DD4BF"/>
+<polygon points="38,78 50,26 92,56" fill="#0F172A" stroke="#0F172A" stroke-width="10" stroke-linejoin="round"/>
+<polygon points="162,78 150,26 108,56" fill="#0F172A" stroke="#0F172A" stroke-width="10" stroke-linejoin="round"/>
+<polygon points="56,62 60,42 76,54" fill="#2DD4BF"/>
+<polygon points="144,62 140,42 124,54" fill="#2DD4BF"/>
+<rect x="34" y="50" width="132" height="112" rx="48" fill="#E2E8F0"/>
+<rect x="40" y="86" width="120" height="42" rx="21" fill="#0F172A"/>
+<circle cx="72" cy="107" r="10" fill="#2DD4BF"/>
+<circle cx="128" cy="107" r="10" fill="#2DD4BF"/>
+<circle cx="75" cy="104" r="3" fill="#FFFFFF"/>
+<circle cx="131" cy="104" r="3" fill="#FFFFFF"/>
+<ellipse cx="100" cy="140" rx="26" ry="16" fill="#FFFFFF"/>
+<ellipse cx="100" cy="134" rx="9" ry="6" fill="#0F172A"/>
+</svg>
